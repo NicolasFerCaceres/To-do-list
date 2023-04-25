@@ -1,0 +1,118 @@
+/* Standart */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background: #B53F3F;
+    --pgm-background: #713838;
+    --font: #fff;
+}
+
+
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Nav */
+
+#navegation-bar {
+    background: var(--background);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    border-bottom: 1px solid #000;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--font);
+    font-weight: 800;
+    font-size: 1.3rem;
+
+}
+
+
+.nav-title {
+    font-size: 3rem;
+    padding: 0 40px;
+    text-decoration: none;
+    color: var(--font);
+    font-weight: 800;
+    font-family: 'Amatic SC', cursive;
+}
+
+#nav {
+    display: flex;
+    margin: 0 50px;
+    gap: 30px;
+}
+
+/* PGM */
+
+.container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    flex-grow: 1;
+}
+
+/* Filters and more */
+
+#buttons-container {
+    background: var(--background);
+    padding: 30px 20px;
+    border-right: 1px solid #000;
+    font-size: 1.3rem;
+    color: var(--font);
+    display: flex;
+    flex-direction: column;
+    min-width: 250px;
+    
+}
+
+#frequency-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 30px;
+    gap: 10px
+}
+
+#task-frequency {
+    border: none;
+    background: var(--pgm-background);
+    color: var(--font);
+    border-radius: 3px;
+    height: 30px;
+    font-weight: 800;
+}
+
+#modify-tasks {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15%;
+}
+
+#add-task, #delete-task {
+    border: none;
+    border-radius: 3px;
+    background: var(--pgm-background);
+    color: var(--font);
+    font-weight: 800;
+    font-size: 1.1rem;
+}
+
+/* PGM Content */
+
+#pgm-container {
+    background: var(--pgm-background);
+}
