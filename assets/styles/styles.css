@@ -116,3 +116,77 @@ body {
 #pgm-container {
     background: var(--pgm-background);
 }
+
+/* ADD TASK TAB */
+
+#add-input-tab {
+    width: 550px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--font);
+    padding: 30px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 5px;
+    transition: all ease 1s;
+    border: 1px solid black;
+    font-weight: 800;
+}
+
+#add-input-tab label {
+    font-size: 1.2rem;
+}
+
+
+#add-form {
+    padding: 30px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 5px 0 0;
+}
+
+.input-container input, .input-container select {
+    background: var(--pgm-background);
+    color: var(--font);
+    font-weight: 800;
+    text-align: center;
+    height: 25px;
+    border: none;
+    border-radius: 2px;
+}
+
+
+
+.checkbox {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* .hide {
+    display: none;
+} */
+
+#add-submit-btn {
+    border: none;
+    background: var(--background);
+    color: var(--font);
+    font-weight: 800;
+    width: 60px;
+    align-self: center;
+    border-radius: 10px;
+    margin: 15px;
+}

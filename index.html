@@ -23,16 +23,20 @@
     <div class="container">
         <section id="buttons-container">
             <div id="frequency-container">
-                <label for="task-frequency">Frequency:</label>
-                <select name="frequency" id="task-frequency">
+                <label for="frequency-filter">Frequency:</label>
+                <select name="frequency-value" id="frequency-filter">
                     <option value="all">All</option>
                     <option value="one">One Time</option>
                     <option value="daily">Daily</option>
+                    <option value="weekly">weekly</option>
                     <option value="monthly">Monthly</option>
                     <option value="annually">Annually</option>
-                    <option value="interval">Time Interval</option>
                 </select>
+
+                <label for="">Category</label>
+                <input type="text" name="" id="">
             </div>
+
             <div id="sort-container">
 
             </div>
@@ -46,7 +50,39 @@
             </div>
         </section>
         <section id="pgm-container"nav-link >
+            <div class="add-container" id="add-input-tab" >
+                <h2 id="add-title">Add your task here.</h2>
+                <form id="add-form" action="">
+                    <div class="input-container">
+                    <label for="tsk-desc">Describe your task</label>
+                    <input type="text" required>
+                    </div>
+                    <div class="input-container">
+                    <label for="category" required>Which would be the category of your task?</label>
+                    <input type="text" name="cat-text" id="category">
+                    </div>
+                    <div class="input-container">
+                    <label for="task-frequiency">How often do you perform this task?</label>
+                    <select name="frequency" id="task-frequiency" required>
+                        <option value="one">One Time</option>
+                        <option value="daily">Daily</option>
+                        <option value="weekly">weekly</option>
+                        <option value="monthly">Monthly</option>
+                        <option value="annually">Annually</option>
+                    </select>
+                    </div>
+                    <div class="input-container checkbox">
+                    <label for="">Have your task a finish date?</label>
+                    <input type="checkbox" name="" id="enable-interval">
+                    </div>
+                    <div class="input-container hide">
+                    <label for="">you could put your finish date here</label>
+                    <input type="date">
+                    </div>
+                    <button id="add-submit-btn" type="submit">Save task!</button>
 
+                </form>
+            </div>
         </section>
 
         
